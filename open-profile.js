@@ -14,7 +14,7 @@ const profileDirs = fs.readdirSync(chromeUserDataDir).filter(dir =>
 
 // Load profile metadata from 'Local State'
 const localStatePath = path.join(chromeUserDataDir, 'Local State');
-console.log(" localStatePath: ", localStatePath);
+// console.log(" localStatePath: ", localStatePath);
 let profileNames = {};
 
 if (fs.existsSync(localStatePath)) {
@@ -31,7 +31,7 @@ if (fs.existsSync(localStatePath)) {
   }, {});
 }
 
-console.log(profileNames);
+// console.log(profileNames);
 
 // Get user input
 const search = process.argv[2];
